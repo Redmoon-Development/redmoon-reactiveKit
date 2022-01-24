@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="UIStyle.uss" />
+    <ui:Foldout text="Foldout" name="ReactiveFoldout" style="height: 60%; flex-direction: column; flex-wrap: nowrap; width: 100%;">
+        <ui:VisualElement style="flex-wrap: wrap; width: 95%; height: 25%;">
+            <ui:Button text="Button" display-tooltip-when-elided="true" name="ReactiveButton" style="height: 40px; width: 49%;" />
+            <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" text="filler text" name="ReactiveTextField" style="height: 40px; width: 49%;" />
+        </ui:VisualElement>
+        <ui:Slider picking-mode="Ignore" label="Slider" value="42" high-value="100" name="ReactiveSlider" style="height: 25%;" />
+        <ui:MinMaxSlider picking-mode="Ignore" label="Min/Max Slider" min-value="10" max-value="12" low-limit="-10" high-limit="40" name="ReactiveMinMaxSlider" style="height: 25%;" />
+        <ui:Toggle label="Toggle" name="ReactiveToggle" style="height: 25%;" />
+    </ui:Foldout>
+    <ui:IMGUIContainer style="height: 40%; align-items: center; justify-content: center;">
+        <ui:ScrollView show-vertical-scroller="true" horizontal-scroller-visibility="Hidden" style="align-items: center; background-color: rgb(47, 47, 47); width: 90%; height: 90%;">
+            <ui:Label display-tooltip-when-elided="true" name="Output" style="left: 0.5px; right: 1px; width: 98%; height: 550%; margin-left: 2px; margin-right: 4px; margin-top: 1%; margin-bottom: 2%; padding-left: 2%; padding-right: 2%; padding-top: 2%; padding-bottom: 2%;" />
+        </ui:ScrollView>
+    </ui:IMGUIContainer>
+</ui:UXML>

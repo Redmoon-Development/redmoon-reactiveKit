@@ -1,0 +1,16 @@
+{
+  "author": {
+    "name": "Jackson Levitt",
+    "email": "jackel1020@protonmail.com"
+  },
+  "description": "A Light Weight Reactive MVVM for Unity",
+  "displayName": "Red Moon Reactive Kit",
+  "name": "io.crazyjackel.redmoon-reactivekit",
+  "unity": "2020.3",
+  "version": "1.0.0",
+  "dependencies": {
+    "com.neuecc.unirx": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
+    "com.unity.ui": "1.0.0-preview.18",
+    "io.crazyjackel.redmoon-depinjector": "https://github.com/crazyjackel/redmoon-depInjector.git"
+  }
+}

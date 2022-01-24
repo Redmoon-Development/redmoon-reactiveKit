@@ -1,0 +1,18 @@
+{
+    "name": "io.github.crazyjackel.reactiveKit",
+    "rootNamespace": "",
+    "references": [
+        "GUID:560b04d1a97f54a4e82edc0cbbb69285",
+        "GUID:03a02e6858eef43b383e305cd83babb4",
+        "GUID:5ebd72074e3e545478dbf7911855aae1"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
