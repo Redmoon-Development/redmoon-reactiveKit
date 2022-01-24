@@ -7,6 +7,6 @@ namespace RedMoon.ReactiveKit.Samples
 {
     public class MainViewModel : ViewModel<MainViewModel>
     {
-        virtual 
+
     }
 }
