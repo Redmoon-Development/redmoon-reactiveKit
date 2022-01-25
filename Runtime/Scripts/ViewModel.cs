@@ -11,12 +11,8 @@ namespace RedMoon.ReactiveKit
     public abstract class ViewModel<VM> : MonoBehaviour, IClient where VM : ViewModel<VM>
     {
         public ReactiveProperty<bool> Initialized { get; private set; } = new ReactiveProperty<bool>(false);
-        public IObservable<VM> ObserveInit { get; private set; }
+        public IObservable<VM> ViewModelAvailable => Initialized.Where(x => x).Select(x => (VM)this);
 
-        public ViewModel()
-        {
-            ObserveInit = Initialized.Where(x => x).Select(x => (VM)this);
-        }
         public virtual void OnEnable()
         {
             DepInjector.AddClient(this);

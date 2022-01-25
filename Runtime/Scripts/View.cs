@@ -20,24 +20,22 @@ namespace RedMoon.ReactiveKit
 
         private void OnEnable()
         {
+            //Create a New Composite Disposable Object
             disposable = new CompositeDisposable();
-
-            viewModel.ObserveInit.Subscribe(x =>
-            {
-                OnActivation(x, disposable);
-            }
-
-            ).AddTo(disposable);
+            //When ViewModel becomes Available Activate the View.
+            viewModel.ViewModelAvailable.Subscribe(__viewModel => OnActivation(__viewModel, disposable)).AddTo(disposable);
         }
-
-        public virtual void OnActivation(VM viewModel, CompositeDisposable disposable)
-        {
-
-        }
-
         private void OnDisable()
         {
             disposable.Dispose();
+        }
+        private void OnDestroy()
+        {
+            disposable.Dispose();
+        }
+        public virtual void OnActivation(VM viewModel, CompositeDisposable disposable)
+        {
+
         }
     }
 }
