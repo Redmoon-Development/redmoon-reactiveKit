@@ -16,6 +16,7 @@ namespace RedMoon.ReactiveKit
         public virtual void OnEnable()
         {
             DepInjector.AddClient(this);
+            TryInitialize(false);
         }
         public virtual void OnDisable()
         {
