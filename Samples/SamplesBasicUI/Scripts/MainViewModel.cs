@@ -1,4 +1,5 @@
 using RedMoon.ReactiveKit;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UniRx;
@@ -16,11 +17,13 @@ namespace RedMoon.ReactiveKit.Samples
         public override void OnInitialization()
         {
             OnButtonClick = new ReactiveCommand<ClickEvent>();
-            OnButtonClick.Subscribe(ce =>
-            {
-                Debug.Log("Clicked");
-                DebugText.Value += $"Button Clicked\n";
-            });
+            OnButtonClick.Subscribe((c) => UpdateDebugText(c, "Button Clicked"));
+        }
+
+        private void UpdateDebugText(ClickEvent obj, string Text)
+        {
+            Debug.Log(obj);
+            DebugText.Value += $"{Text}\n";
         }
     }
 }

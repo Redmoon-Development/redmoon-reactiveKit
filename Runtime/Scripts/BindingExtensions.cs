@@ -7,14 +7,6 @@ using UnityEngine.UIElements;
 
 namespace RedMoon.ReactiveKit
 {
-    public enum BindingMode : byte
-    {
-        OneWay,
-        TwoWay,
-        OneWayToSource
-    }
-
-
     public static class BindingExtensions
     {
         #region Visual Element
