@@ -9,8 +9,10 @@
   "unity": "2020.3",
   "version": "1.0.0",
   "dependencies": {
+    "com.unity.ui": "1.0.0-preview.18"
+  },
+  "gitDependencies": {
     "com.neuecc.unirx": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
-    "com.unity.ui": "1.0.0-preview.18",
     "io.crazyjackel.redmoon-depinjector": "https://github.com/crazyjackel/redmoon-depInjector.git"
   }
 }
