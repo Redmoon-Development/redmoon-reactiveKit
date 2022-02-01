@@ -117,6 +117,12 @@ namespace RedMoon.ReactiveKit
             var d2 = BindToValueChanged(element, property);
             return StableCompositeDisposable.Create(d1, d2);
         }
+        public static IDisposable BindTwoWayValueChangedWithState<T>(this INotifyValueChanged<T> element, IReactiveProperty<T> property, bool stateIsProperty = true)
+        {
+            var d1 = BindValueChangedWithState(element, property, stateIsProperty);
+            var d2 = BindToValueChangedWithState(element, property, stateIsProperty);
+            return StableCompositeDisposable.Create(d1, d2);
+        }
         #endregion
     }
 }
