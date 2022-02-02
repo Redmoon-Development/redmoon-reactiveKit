@@ -7,7 +7,7 @@
   "displayName": "Red Moon Reactive Kit",
   "name": "io.crazyjackel.redmoon-reactivekit",
   "unity": "2020.3",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "dependencies": {
     "com.unity.ui": "1.0.0-preview.18"
   },
