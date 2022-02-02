@@ -13,7 +13,7 @@
   },
   "gitDependencies": {
     "com.neuecc.unirx": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
-    "io.crazyjackel.redmoon-depinjector": "https://github.com/crazyjackel/redmoon-depInjector.git"
+    "io.crazyjackel.redmoon-depinjector": "https://github.com/crazyjackel/redmoon-depInjector.git#1.0.1"
   },
   "samples": [
     {

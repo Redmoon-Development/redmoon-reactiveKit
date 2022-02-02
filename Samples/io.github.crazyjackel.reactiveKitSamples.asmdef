@@ -2,9 +2,9 @@
     "name": "io.github.crazyjackel.reactiveKitSamples",
     "rootNamespace": "",
     "references": [
+        "GUID:5e29b8baa43663b41b895c32ce9d38fc",
         "GUID:2ff61d08e19f7704ea0fec39ea8dba78",
-        "GUID:560b04d1a97f54a4e82edc0cbbb69285",
-        "GUID:5ebd72074e3e545478dbf7911855aae1"
+        "GUID:560b04d1a97f54a4e82edc0cbbb69285"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
