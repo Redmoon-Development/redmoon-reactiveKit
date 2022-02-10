@@ -14,12 +14,17 @@ namespace RedMoon.ReactiveKit.Samples
         public ReactiveProperty<string> ReactiveText { get; protected set; } = new ReactiveProperty<string>("");
 
         public ReactiveCommand<ClickEvent> OnButtonClick;
+        public ReactiveCommand<ClickEvent> OnDoubleClick;
         public ReactiveCommand<ChangeEvent<string>> OnTextFieldChange;
 
         public override void OnInitialization()
         {
             OnButtonClick = new ReactiveCommand<ClickEvent>();
             OnButtonClick.Subscribe((c) => UpdateDebugText(c, "Button Clicked"));
+
+            OnDoubleClick = new ReactiveCommand<ClickEvent>();
+            OnDoubleClick.Subscribe((c) => UpdateDebugText(c, "Double Clicked"));
+
 
             OnTextFieldChange = new ReactiveCommand<ChangeEvent<string>>();
             OnTextFieldChange.Subscribe((c) => UpdateDebugText(c, "Field Changed:"));
