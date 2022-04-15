@@ -40,7 +40,7 @@ namespace RedMoon.ReactiveKit.Samples
             //Bind such that whenever field value changes, it executes OnTextFieldChange
             //Bind such that whenever field value changes, it updates reactive text. Initializes to default field value.
             field.BindValueChanged(viewModel.OnTextFieldChange).AddTo(disposable);
-            field.BindValueChangedWithState(viewModel.ReactiveText, false).AddTo(disposable);
+            field.BindValueChanged(viewModel.ReactiveText).AddTo(disposable);
             //Bind such that whenever ReactiveText changes, it updates fieldlabel value.
             fieldLabel.BindToValueChanged(viewModel.ReactiveText).AddTo(disposable);
         }
