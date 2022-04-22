@@ -3,7 +3,7 @@
 ## Description
 A Lightweight UniRx Integration into Unity's UI Toolkit.
 
-## How to Use
+## How to Use (Install)
 Follow the Install Instructions for https://github.com/sandolkakos/unity-package-manager-utilities
 
 For Git Versioning and Updates, Install: https://github.com/mob-sakai/UpmGitExtension#usage
@@ -12,6 +12,13 @@ Then Just copy the link below and add it to your project via Unity Package Manag
 ```
 https://github.com/crazyjackel/redmoon-reactiveKit.git
 ```
+
+## Plans
+
+- More Stylization UniRX commands.
+- Optimizing calls
+- More Examples
+
 ## License
 MIT License
 
