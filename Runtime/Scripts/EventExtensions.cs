@@ -14,6 +14,15 @@ namespace RedMoon.ReactiveKit
         {
             return new EventCallbackObservable<TEventType>(element);
         }
+
+        public static IDisposable SubscribeToExecuteCommand<T>(this IObservable<T> observable, IReactiveCommand<T> reactive)
+        {
+            return observable.Subscribe(x => reactive.Execute(x));
+        }
+        public static IDisposable SubscribeToUpdateProperty<T>(this IObservable<T> observable, IReactiveProperty<T> property)
+        {
+            return observable.Subscribe(x => property.Value = x);
+        }
     }
 
     internal class EventCallbackObservable<TEventType> : OperatorObservableBase<TEventType> where TEventType : EventBase<TEventType>, new()

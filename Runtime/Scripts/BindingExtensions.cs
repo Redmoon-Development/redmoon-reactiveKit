@@ -134,5 +134,6 @@ namespace RedMoon.ReactiveKit
             return StableCompositeDisposable.Create(d1, d2);
         }
         #endregion
+
     }
 }
